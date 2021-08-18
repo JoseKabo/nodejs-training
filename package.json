@@ -1,0 +1,11 @@
+{
+  "name": "training-nodejs",
+  "version": "1.0.0",
+  "description": "This is a sample repository for training basic concepts",
+  "main": "code_challenge_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JoseMedellin",
+  "license": "ISC"
+}

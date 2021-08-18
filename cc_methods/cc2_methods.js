@@ -38,14 +38,18 @@ const getEvenNumber = (arr = []) => {
 }
 
 const getAverageArray = (arr = [] ) => {
+    //TODO: Get average from array
     console.time('Average Array execution time: ');
-    const avg = arr.reduce( (previousValue, currentValue) => previousValue + currentValue) / arr.length;
+    const avg = arr.reduce( (pValue, cValue) => pValue + cValue) / arr.length;
+    //TODO: If average < 10, add 20
+    let newArr = [];
+    if(avg < 10){
+        const newElements = arrGenerator(20,1,20);
+        newArr=arr.concat(newElements);
+    }
     console.timeEnd('Average Array execution time: ');
-    console.log('Average: ', avg);
+    console.log(` Average: ${avg} \n Array: ${newArr} \n Length: ${newArr.length}`);
 }
-
-//TODO: If average < 10, add 20
-
 
 
 module.exports = {
@@ -54,5 +58,4 @@ module.exports = {
     getEvenNumber,
     getAverageArray,
     getUniqueValues
-
 }
